@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-inter">
+    <section class="container mx-auto">
+        <div class="h-screen flex justify-center  items-center  ">
+            <div class=" bg-[#efeeee] py-[50px] px-[200px] rounded-lg">
+
+                <div class="  flex justify-center  items-center  gap-11 ">
+
+                    <!-- ===================== Reg Form ================= -->
+
+                    <div
+                        class="idCard_form  rounded-lg px-[28px] py-[40px]  bg-white flex  items-center justify-center ">
+                        <div class="flex flex-col items-center ">
+
+                            <div class="w-[168px]  ">
+                                <picture>
+                                    <img src="./images/mak_logo.png" alt="" class="rounded-md">
+                                </picture>
+                            </div>
+                            <h1 class="font-semibold text-black text-[25px] leading-7 text-center pt-[14px] pb-8">
+                                Student ID Card Registration Form</h1>
+
+                            <!-- ================== Form Start Here =============== -->
+
+                            <form action="#" class="">
+
+                                <input
+                                    class="first_name  border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[164px] mb-2"
+                                    type="text" name="" id="" placeholder="First name">
+                                <p class="firstName_err"></p>
+                                <p class="name_err"></p>
+
+                                <input
+                                    class="last_name border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[164px] my-2 "
+                                    type="text" name="" id="" placeholder="Last name">
+                                <p class="lastName_err"></p>
+
+                                <input
+                                    class="your_id border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[164px]  my-2"
+                                    type="text" name="" id="" placeholder="Student id number">
+                                <p class="studentID_err"></p>
+
+
+                                <input
+                                    class="your_program border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[164px]  my-2"
+                                    type="text" name="" id="" placeholder="Program">
+                                <p class="program_err"></p>
+
+                                <input
+                                    class="your_email border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[164px]  my-2"
+                                    type="text" name="" id="" placeholder="Email">
+                                <p class="email_err"></p>
+
+
+                                <input
+                                    class="phone_number border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[164px]  "
+                                    type="text" name="" id="" placeholder="Phone number">
+                                <p class="number_err"></p>
+
+                                <!-- <div class="flex gap-4 my-2">
+
+                                    <input
+                                        class="phone_number border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[50px]  "
+                                        type="text" name="" id="" placeholder="Phone number">
+                                    <p class="number_err"></p>
+
+                                    <select name="" id="blood_group"
+                                        class="outline-none border border-[#dadfe4] rounded px-4">
+                                        <option value="A">A+</option>
+                                        <option value="A">B+</option>
+                                        <option value="A">O+</option>
+                                        <option value="A">A</option>
+                                        <option value="A">A</option>
+                                    </select>
+                                </div> -->
+
+                                <input
+                                    class="blood border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[164px]  my-2"
+                                    type="text" name="" id="" placeholder="Blood group">
+                                <p class="blood_err"></p>
+
+                                <input
+                                    class="border border-[#dadfe4] rounded text-[#263445] outline-none py-3 pl-4 pr-[164px] your_address my-2"
+                                    type="text" name="" id="" placeholder="Address">
+                                <p class="address_err"></p>
+
+                            </form>
+                            <!-- ================ Button =============== -->
+                            <div class="flex justify-center gap-5 mt-3">
+                                <button
+                                    class="submit_btn bg-black  text-white px-4 py-2 rounded-md hover:bg-red-500 transition-all duration-300">Submit</button>
+                                <button
+                                    class="reset  bg-red-500 hover:bg-black transition-all duration-300 text-white px-4 py-2 rounded-md">Reset</button>
+                            </div>
+
+                            <!-- ================== Form End Here =============== -->
+
+                        </div>
+                    </div>
+
+
+                    <!-- ================ Id Card Here ============= -->
+                    <div class="id_card ">
+                        <div class="flex justify-center flex-col items-center ">
+                            <div class=" w-[470px] h-[300px]">
+
+
+                                <div class="bg-black h-[40%] rounded-t-xl  relative">
+                                    <div class="w-[150px] h-[130px] absolute top-[18%] left-[5%]">
+                                        <img src="./images/id_img.jpg" alt="" class="rounded-lg w-[150px]">
+                                    </div>
+                                    <img src="./images/mak_logo.png" alt="" class="w-[250px] pt-5 ml-[40%] ">
+                                </div>
+                                <div class="bg-white h-[60%] rounded-b-xl">
+                                    <h3 class="uppercase pl-[43%] pt-2 font-semibold">Student id Card</h3>
+                                    <div class="id_card_show ">
+
+                                        <h1 class="fullname text-red-500 font-medium pl-[43%] pt-2 text-base"></h1>
+                                        <div>
+                                            <span class="program  text-[10px] pl-[43%] font-medium"></span>
+                                            <p class="email text-[10px] pl-[43%] font-medium"></p>
+                                        </div>
+
+
+                                        <div class="pt-5 px-8 flex items-center justify-between">
+                                            <div>
+                                                <!-- <p class="uppercase text-[9px] text-red-500">id no</p> -->
+                                                <p class="id_number font-medium text-[12px] "></p>
+                                            </div>
+
+                                            <div>
+                                                <!-- <p class="uppercase text-[9px] text-red-500">Phone Number</p> -->
+                                                <p class="number font-medium text-[12px]  "></p>
+                                            </div>
+                                            <div>
+                                                <p class="blood_group font-medium text-[12px]"></p>
+                                            </div>
+                                            <div class="validity hidden">
+                                                <p class=" font-medium text-[12px] ">Validity date</p>
+                                                <p class="font-medium text-[12px]">04/09/2024</p>
+                                            </div>
+
+                                        </div>
+
+                                        <p class="address"></p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="tailwind.config.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

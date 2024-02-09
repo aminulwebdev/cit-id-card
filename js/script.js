@@ -121,7 +121,7 @@ submitBtn.addEventListener("click", function () {
         getNumber.innerHTML = `Phone Number <br> ${phoneNumber.value}`
         getBlood.innerHTML = `Blood Group <br> ${bloodGroup.value}`
         // getAddress.innerHTML = `Address: ${address.value}`
-        addressErr.innerHTML = ``
+        // addressErr.innerHTML = ``
         getValidity.style.display = "block"
     }
 
